@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "test-app",
-    "slug": "test-app",
+    "name": "Spartan development and testing app",
+    "slug": "spartan-dev",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

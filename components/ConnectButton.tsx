@@ -6,6 +6,8 @@ import Colors from '../constants/Colors';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
+const SERVER_IP = "http://35.173.125.185:3000";
+
 export default function ConnectButton() {
   const localstyle = styles({isConnected: false})
 
@@ -13,14 +15,13 @@ export default function ConnectButton() {
     <View style={localstyle.container}>
       <TouchableOpacity
         style={localstyle.button}
-        onPress={() => console.log("hi")}
+        onPress={() => {
+          fetch(`${SERVER_IP}/punch`)
+        }}
       >
         <Text style={{fontSize: 20}}>Connect</Text>
       </TouchableOpacity>
     </View>
-
-
-
   );
 }
 
